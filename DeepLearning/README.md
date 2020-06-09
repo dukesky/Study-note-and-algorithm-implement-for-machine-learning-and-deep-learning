@@ -1,73 +1,73 @@
 # **Deep Learning**
-[Introduction](#Introduction)
+1. [Basic concept Introduction](#basic-concept-introduction)
 
-[Gradient Descent](#gradient-descent)
+   1. [Gradient Descent](#gradient-descent)
 
-[when to use deep learning](#when-to-use-deep-learning)
+   2. [when to use deep learning](#when-to-use-deep-learning)
 
-[MMSE](#mmse)
+   3. [MMSE](#mmse)
 
-[Decision Theory](#decision-theory)
+   4. [Decision Theory](#decision-theory)
 
-[MAP](#7928-1567186463618)
+   5. [MAP](#map)
 
-[ML](#1993-1567189779980)
+   6. [ML](#ml)
 
-[Entropy](#5410-1567189884927)
+   7. [Entropy](#entropy)
 
-[Regulatization](#1575-1567189974024)
+   8. [Regulatization](#regulatization)
 
-[Train/Test Split](#7521-1567190547514)
+   9. [Train/Test Split](#train/test-split)
 
-[Simple DNN](#9123-1567190535988)
+2. [Simple DNN](#simple-dnn)
 
-[Forward Propagation](#1453-1567149114098)
+   1. [Forward Propagation](#forward-propagation)
 
-[Back Propagation](#2985-1567149114416)
+   2. [Back Propagation](#back-propagation)
 
-[idea](#3649-1566969003923)
+      1. [idea](#idea)
 
-[summary](#2172-1567208589376)
+      2. [summary](#summary)
 
-[regularizer](#2993-1567208764349)
+      3. [regularizer](#regularizer)
 
-[Multi-Layer Perceptron](#4570-1567209192600)
+3. [Multi-Layer Perceptron](#multi-layer-perceptron)
 
-[A Big Picture](#8540-1566968770087)
+   1. [A Big Picture](#a-big-picture)
 
-[Activation Function](#5765-1567210487712)
+   2. [Activation Function](#activation-function)
 
-[Cost Function](#6063-1567211450851)
+   3. [Cost Function](#cost-function)
 
-[Optimizer](#1010-1567211895158)
+   4. [Optimizer](#optimizer)
 
-[Regularization](#3949-1567225394632)
+   5. [Regularization](#regularization)
 
-[Dropout](#4623-1567225772323)
+   6. [Dropout](#dropout)
 
-[Normalization](#8112-1567228892584)
+   7. [Normalization](#normalization)
 
-[Dimensionality Reduction](#8876-1567228892762)
+   8. [Dimensionality Reduction](#dimensionality-reduction)
 
-[PCA](#1098-1567228892885)
+      1. [PCA](#pca)
 
-[LDA](#3712-1567276007695)
+      2. [LDA](#lda)
 
-[Hyper parameter](#6887-1567361193398)
+   9. [Hyper parameter](#hyper-parameter)
 
-[Universal Approximation Theorem](#7660-1567276219530)
+   10. [Universal Approximation Theorem](#universal-approximation-theorem)
 
-[CNN](#7974-1567363066859)
+4. [CNN](#cnn)
 
-[Introduction](#5962-1567402688177)
+   1. [CNN Introduction](#cnn-introduction)
 
-[Kernel(Filter)](#8472-1567453876673)
+   2. [Kernel(Filter)](#kernel(filter))
 
-[Conv layer](#3748-1567276235052)
+   3. [Conv layer](#conv-layer)
 
-[Pooling layer](#3079-1567465440089)
+   4. [Pooling layer](#pooling-layer)
 
-[De-Conv(Transpose convolution) layer](#3228-1567453882535)
+   5. [De-Conv(Transpose convolution) layer](#de-conv(transpose-convolution)-layer)
 
 [Transposed 2D convolution with no padding, stride of 2 and kernel of 3](#3986-1567634359536)
 
@@ -103,9 +103,9 @@
 
 [Keras](#4059-1567559736866)
 
-[RNN](#4888-1566955799496)
+5. [RNN](#4888-1566955799496)
 
-[Introduction](#5735-1591211628380)
+[RNN Introduction](#rnn-introduction)
 
 [Vanish Gradient Problem](#1888-1591211806350)
 
@@ -127,7 +127,8 @@
 
 
 
-## **Introduction**
+## **Basic Concept Introduction**   
+[Back](#deep-learning)
 
 ### **Gradient Descent**
 
@@ -183,7 +184,7 @@ Do
 
 ![](../pic/微信截图_20190830113923.png)
 
-### **binary cross entropy**
+### **binary cross entropy**   [back content](#Introduction)
 
 ![](../pic/微信截图_20190830113338.png)
 
@@ -225,7 +226,7 @@ iteration -- number of mini-batches per epoch
 
 ### **Back Propagation**
 
-### **idea**
+#### **idea**
 
 ![](../pic/微信截图_20190830161035.png)
 
@@ -251,19 +252,19 @@ work for matrix (vector case)
 
 ![](../pic/微信截图_20190830164256.png)
 
-### **summary**
+#### **summary**
 
 ![](../pic/微信截图_20190830164452.png)
 
 ![](../pic/微信截图_20190830164502.png)
 
-### **using batch**
+#### **using batch**
 
 so it&#39;s like compute several data points with same **w** and **δ** and use average as the update delta
 
 ![](../pic/微信截图_20190830164622.png)
 
-### **regularizer**
+#### **regularizer**
 
 ![](../pic/微信截图_20190830165306.png)
 
@@ -434,7 +435,7 @@ things Neural Network don't learning by themself
 
 ![](../pic/微信截图_20190901112938.png)
 
-**Universal Approximation Theorem**
+### **Universal Approximation Theorem**
 
 basic idea: Neural Network can simulate all function
 
@@ -446,7 +447,7 @@ basic idea: Neural Network can simulate all function
 
 ![](../pic/微信截图_20190901223801.png)
 
-### **Introduction**
+### **CNN Introduction**
 
 good introduction by [Stanford online class](http://cs231n.github.io/convolutional-networks/#pool)
 
@@ -789,9 +790,9 @@ model.add(Activation('softmax'))
 
  **Flatten layer**: Flatten serves as a connection between the convolution and dense layers.
 
-# **RNN**
+## **RNN**
 
-**Introduction**
+### **RNN Introduction**
 
 _x\_1, x\_2, x\_3, …, x\_t_ represent the input words from the text, _y\_1, y\_2, y\_3, …, y\_t_ represent the predicted next words and _h\_0, h\_1, h\_2, h\_3, …, h\_t_ hold the information for the previous input words.
 
@@ -936,21 +937,21 @@ useful source:\
 
 ![](../pic/010.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_bb73d8d504e5ad26.png)
+![](../pic/021.PNG)
 
 **Update gate**
 
 (samilar to foget+input gate)
 
-![](RackMultipart20200609-4-1vghqmz_html_fb8cbddd00aedb40.png)
+![](../pic/023.PNG)
 
 **Reset Gate**
 
 (samiar to )
 
-![](RackMultipart20200609-4-1vghqmz_html_fdf90057517a3505.png)
+![](../pic/024.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_2625320ab9b5f972.png)
+![](../pic/022.PNG)
 
 **Back-Propagation through Time (BPTT)**
 
@@ -960,10 +961,10 @@ useful source:\
 
 BERT (Bidirectional Encoder Representations from Transformers), released in late 2018, is a method to **pretrain language representations** that was used to create models that NLP practicioners can then download and use for free. You can either use these models to extract high quality language features from your text data, or you can fine-tune these models on a specific task (classification, entity recognition, question answering, etc.) with your own data to produce state of the art predictions.
 
-GRT-3
+GPT-3
 
 # **TensorFlow and Keras**
 
-**sequential model**
+## **sequential model**
 
 # **Pytorch**
