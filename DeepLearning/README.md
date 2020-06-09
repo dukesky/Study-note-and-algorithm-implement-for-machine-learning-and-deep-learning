@@ -41,21 +41,37 @@
 
    4. [Optimizer](#optimizer)
 
-   5. [Regularization](#regularization)
+   5. [Momentum](#momentum)
 
-   6. [Dropout](#dropout)
+   6. [Differenct Kinds of Optimizers](#different-kinds-of-optimizers)
+   
+      1. [RMSprop](#rmsprop)
 
-   7. [Normalization](#normalization)
+      2. [Adam](#adam)
 
-   8. [Dimensionality Reduction](#dimensionality-reduction)
+      3. [SGD](#sgd)
 
-      1. [PCA](#pca)
+      4. [AdaMax](#adamax)
 
-      2. [LDA](#lda)
+      5. [Adadelta](#adadelta-(fastest))
 
-   9. [Hyper parameter](#hyper-parameter)
+      6. [which optimizer is best?]()
 
-   10. [Universal Approximation Theorem](#universal-approximation-theorem)
+   7. [Regularization](#regularization)
+
+   8. [Dropout](#dropout)
+
+   9. [Normalization](#normalization)
+
+   10. [Dimensionality Reduction](#dimensionality-reduction)
+
+       1. [PCA](#pca)
+
+       2. [LDA](#lda)
+
+   11. [Hyper parameter](#hyper-parameter)
+
+   12. [Universal Approximation Theorem](#universal-approximation-theorem)
 
 4. [CNN](#cnn)
 
@@ -69,61 +85,78 @@
 
    5. [De-Conv(Transpose convolution) layer](#de-conv(transpose-convolution)-layer)
 
-[Transposed 2D convolution with no padding, stride of 2 and kernel of 3](#3986-1567634359536)
+   6. [Group Convolution](#group-convolution)
 
-[Group Convolution](#3361-1567647496745)
+   7. [Seperable Convolutions](#seperable-convolutions)
 
-[Seperable Convolutions](#8820-1567647808750)
+        1. [Depthwise Separable Convolutions](#Depthwise-Separable-Convolutions)
 
-[Full Connect layer](#8992-1567647050727)
+        2. [drawback](#drawback)
 
-[# of Parameters computation](#4080-1567544290778)
 
-[Visualization](#1512-1567626353562)
+   8. [Different Nets](#different-nets)
 
-[Different Nets](#5650-1567544298601)
+      1. [LeNet(1998)](#lenet(1998))
 
-[LeNet(1998)](#6542-1567630247173)
+      2. [AlexNet(2012)](#alexnet(2012))
 
-[AlexNet(2012)](#4872-1567544325127)
+      3. [VGG](#vgg)
 
-[VGG](#3016-1567630339075)
+      4. [Resnet](#resnet)
 
-[Resnet](#6320-1567544338806)
+      5. [GoogleNet (Inception)](#googlenet(inception))
 
-[GoogleNet (Inception)](#2268-1567626564512)
+      6. [MobileNet](#mobilenet)
 
-[MobileNet](#6124-1567630748011)
+      7. [Comparation](#comparation)
 
-[Comparation](#8150-1567710768197)
+   9. [CNN in NLP](#cnn-in-nlp)
 
-[CNN in NLP](#4072-1567631300168)
+   10. [Coding](#coding)
 
-[Coding](#6832-1567712454135)
+       1. [Keras](#4059-1567559736866)
 
-[Keras](#4059-1567559736866)
+5. [RNN](#rnn)
 
-5. [RNN](#4888-1566955799496)
+   1. [RNN Introduction](#rnn-introduction)
 
-[RNN Introduction](#rnn-introduction)
+   2. [Vanish Gradient Problem](#vanish-gradient-problem)
 
-[Vanish Gradient Problem](#1888-1591211806350)
+   3. [LSTM](#lstm)
 
-[LSTM](#3853-1591229892046)
+        1. [Core Concept](#core-concept)
 
-[GRU](#3289-1591237107911)
+        2. [Forget Gate](#forget-gate)
 
-[Back-Propagation through Time (BPTT)](#1891-1591226440731)
+        3. [Input Gate](#input-gate)
 
-[Word Embedding](#2071-1591211806725)
+        4. [Cell Gate](cell-gate)
 
-[BERT](#8553-1567149183370)
+        5. [Output Gate](#output-gate)
 
-[TensorFlow and Keras](#9326-1566968927669)
+        6. [OTHER VERSION(Keras)](#other-version(keras))
 
-[sequential model](#5571-1566968973805)
+        7. [other version of LSTM intorduction](#other-version-of-lstm-introduction)
 
-[Pytorch](#4828-1566968942504)
+   4. [GRU](#gru)
+
+      1. [Update gate](#update-gate)
+
+      2. [Reset Gate](#reset-gate)
+
+   5. [Back-Propagation through Time (BPTT)](#Back-Propagation-through-Time-(BPTT))
+
+   6. [Word Embedding](#word-embedding)
+
+   7. [RNN Model](#rnn-model)
+
+      1. [BERT](#bert)
+
+   8. [TensorFlow and Keras](#tensorflow-and-keras)
+
+      1. [sequential model](#5571-1566968973805)
+
+7. [Pytorch](#pytorch)
 
 
 
@@ -211,6 +244,7 @@ epoch -- one training run through all data set
 iteration -- number of mini-batches per epoch
 
 ## **Simple DNN**
+[Back](#deep-learning)
 
 1. Input an example from a dataset.
 2. The network will take that example and apply some complex computations to it using randomly initialised variables (called weights and biases).
@@ -269,6 +303,7 @@ so it&#39;s like compute several data points with same **w** and **δ** and use 
 ![](../pic/微信截图_20190830165306.png)
 
 ## **Multi-Layer Perceptron**
+[Back](#deep-learning)
 
 ### **A Big Picture**
 
@@ -312,6 +347,8 @@ Quadratic Cost (MSE)
 
 ### **Optimizer**
 
+[Back](#deep-learning)
+
 **Hessian**
 
 ![](../pic/微信截图_20190830175146.png)
@@ -322,7 +359,7 @@ Quadratic Cost (MSE)
 
 will condition lead to fast gradient
 
-**Momentum**
+### **Momentum**
 
 ![](../pic/微信截图_20190830175523.png)
 
@@ -336,7 +373,9 @@ Nesterov Momentum
 
 ![](../pic/微信截图_20190830175921.png)
 
-### **Differenct Kinds of Optimizers**
+### **Different Kinds of Optimizers**
+
+[Back](#deep-learning)
 
 ![](../pic/微信截图_20190830180034.png)
 
@@ -344,27 +383,27 @@ Nesterov Momentum
 
 ![](../pic/saddle_point_evaluation_optimizers.gif)
 
-**RMSprop**
+#### **RMSprop**
 
 ![](../pic/微信截图_20190830210348.png)
 
-**Adam (more complex compared to RMSprop)**
+#### **Adam (more complex compared to RMSprop)**
 
 ![](../pic/微信截图_20190830210511.png)
 
-**SGD**
+#### **SGD**
 
 (may include momentum and learning rate)
 
 more basic, need more experience
 
-**AdaMax**
+#### **AdaMax**
 ![](../pic/微信截图_20190830211925.png)
 
 ![](../pic/微信截图_20190830211935.png)
 
 
-**Adadelta (fastest)**
+#### **Adadelta (fastest)**
 ![](../pic/微信截图_20190830211711.png)
 
 ![](../pic/微信截图_20190830211725.png)
@@ -375,11 +414,11 @@ more basic, need more experience
 
 
 
-### **which optimizer is best?**
+#### **which optimizer is best?**
 
 **RMSprop** is an extension of Adagrad that deals with its radically diminishing learning rates. It is **identical to Adadelta** , except that Adadelta uses the RMS of parameter updates in the numinator update rule. Adam, finally, adds bias-correction and momentum to RMSprop. Insofar, **RMSprop, Adadelta** , and **Adam** are very similar algorithms that do well in similar circumstances.
 
-**Regularization**
+### **Regularization**
 
 bias- variance trade-off (in EE660) ( **for a given MSE** )
 
@@ -403,11 +442,11 @@ Esemble method turn to drop out
 
 SVD: singular value decomposition
 
-**PCA**
+#### **PCA**
 
 ![](../pic/微信截图_20190831112734.png)
 
-**LDA**
+#### **LDA**
 
 need labels of all data, change data based on it&#39;s label
 
@@ -424,6 +463,7 @@ things Neural Network don't learning by themself
 ![](../pic/微信截图_20190901112424.png)
 
 ### **use cross validation to set hyper-parameters**
+[Back](#deep-learning)
 
 **Hyper-parameter seatch**
 
@@ -436,6 +476,7 @@ things Neural Network don't learning by themself
 ![](../pic/微信截图_20190901112938.png)
 
 ### **Universal Approximation Theorem**
+[Back](#deep-learning)
 
 basic idea: Neural Network can simulate all function
 
@@ -444,6 +485,7 @@ basic idea: Neural Network can simulate all function
 ![](../pic/微信截图_20190901113824.png)
 
 ## **CNN**
+[Back](#deep-learning)
 
 ![](../pic/微信截图_20190901223801.png)
 
@@ -465,7 +507,7 @@ Slide
 
 Padding
 
-**size:**
+size:
 
 small (3\*3) deep
 
@@ -473,13 +515,13 @@ large (5\*5) fast reduction,shallow, more parameters
 
 ![](../pic/微信截图_20190902125135.png)
 
-**Conv layer**
+### **Conv layer**
 
 image: 3-D in volume
 
 **basic:** each neural is only connect to some of the neural in next layer
 
-**Basic Function of Conv-layer:**
+#### **Basic Function of Conv-layer:**
 
 also like Σ(wx)+b (if **b** exist?)
 
@@ -491,15 +533,17 @@ Intuitively, the network will learn filters that activate when they see some typ
 
 ### **Hyper-Parameters**
 
-**depth**
+[Back](#deep-learning)
+
+* **depth**
 
 number of filters we want to use, they will look into the same region
 
-**stride**
+* **stride**
 
 commonly --> 1
 
-**zero-padding**
+* **zero-padding**
 
 we could:
 
@@ -507,7 +551,7 @@ we could:
 
 2. remain the edge information
 
-**For three channel**
+* **For three channel**
 
 three filters to combine a kernel, three output add up together, and add bias
 
@@ -517,7 +561,7 @@ three filters to combine a kernel, three output add up together, and add bias
 
 ![](../pic/1_RYYucIh3U-YFxrIkyQKzRw.gif)
 
-**dilation**
+* **dilation**
 
 it&#39;s possible to have filters that have spaces between each cell, called dilation.
 
@@ -525,7 +569,7 @@ in one dimension a filter w of size 3 would compute over input x the following: 
 
 so the computed block is not continous
 
-### **compute output size(O)**
+#### **compute output size(O)**
 
 by input size( **W** ), filter size( **F** ) and stride( **S** ) and amount of zero padding( **P** )
 
@@ -533,7 +577,7 @@ O=(W−F+2P)/S+1.
 
 input W\*W output O\*O
 
-### **Parameter Sharing(weight sharing)**
+#### **Parameter Sharing(weight sharing)**
 
 one feature is useful to compute at some spatial position (x,y), then it should also be useful to compute at a different position (x2,y2). In other words, denoting a single 2-dimensional slice of depth as a  **depth slice**
 
@@ -549,13 +593,13 @@ questions? each filter has three channel or just one?
 
 ![](../pic/微信截图_20190904114655.png)
 
-### **a new method: seperable convolution**
+**a new method: seperable convolution**
 
 **Xception**
 
 convert 3\*3 kernel to 3\*1 and 1\*3 (used in Enmedded system)
 
-**Pooling layer**
+#### **Pooling layer**
 
   Its function is to progressively reduce the spatial size of the representation to **reduce the amount of parameters and computation in the network** , and hence to also control overfitting.
 
@@ -567,7 +611,7 @@ Max pooling | average pooling | L2-norm pooling
 
 ![](../pic/微信截图_20190902141555.png)
 
-**De-Conv(Transpose convolution) layer**
+#### **De-Conv(Transpose convolution) layer**
 
 convolution: a pixels block into a point --> down sampling
 
@@ -589,11 +633,11 @@ map e.g. 4-dimensional space to 25-dimensional space
 
 Transposed 2D convolution with no padding, stride of 2 and kernel of 3
 
-**Group Convolution**
+### **Group Convolution**
 
 In each filter group, the depth of each filter is only half of the that in the nominal 2D convolutions. They are of depth Din / 2. Each filter group contains Dout /2 filters. The first filter group (red) convolves with the first half of the input layer ([:, :, 0:Din/2]), while the second filter group (blue) convolves with the second half of the input layer ([:, :, Din/2:Din]). As a result, each filter group creates Dout/2 channels. Overall, two groups create 2 x Dout/2 = Dout channels. We then stack these channels in the output layer with Dout channels.
 
-**Advantage:**
+#### **Advantage:**
 
 efficient training.
 
@@ -607,7 +651,7 @@ Grouped convolution may provide a better model than a nominal 2D convolution.
 
 If the number of filter groups is the same as the input layer channel, each filter is of depth Din / Din = 1. This is the same filter depth as in depthwise convolution.
 
-**Seperable Convolutions**
+### **Seperable Convolutions**
 
 Efficiency!
 
@@ -619,7 +663,7 @@ change the 3\*3 kernel to 3\*1 and 1\*3 two kernel This would require 6 instead 
 
 Although spatially separable convolutions save cost, it is rarely used in deep learning. One of the main reason is that not all kernels can be divided into two, smaller kernels. If we replace all traditional convolutions by the spatially separable convolution, we limit ourselves for searching all possible kernels during training. The training results may be sub-optimal.
 
-**Depthwise Separable Convolutions**
+#### **Depthwise Separable Convolutions**
 
 much commonly used in deep learning: **depthwise convolution** and **1\*1 convolution**
 
@@ -633,7 +677,7 @@ Thus, after applying 128 1x1 convolutions, we can have a layer with size 5 x 5 x
 
 ![](../pic/微信截图_20190904153751.png)
 
-**drwaback:**
+#### **drawback:**
 
 reduces the number of parameters in the convolution. As such, for a small model, the model capacity may be decreased significantly if the 2D convolutions are replaced by depthwise separable convolutions.
 
@@ -651,15 +695,17 @@ reduces the number of parameters in the convolution. As such, for a small model,
 
 **Heatmap**
 
-**Different Nets**
+### **Different Nets**
 
-**LeNet(1998)**
+[Back](#deep-learning)
+
+#### **LeNet(1998)**
 
 classifies digits in 32x32 pixel greyscale inputimages
 
 ![](../pic/微信截图_20190904135146.png)
 
-**AlexNet(2012)**
+#### **AlexNet(2012)**
 
   deeper, with more filters per layer, and with stacked convolutional layers. It consisted 11x11, 5x5,3x3, convolutions, max pooling, dropout, data augmentation, ReLU activations, SGD with momentum.
 
@@ -667,7 +713,7 @@ train on two GPUs
 
 ![](../pic/微信截图_20190904135357.png)
 
-**VGG**
+#### **VGG**
 
 [VGG paper here](https://arxiv.org/pdf/1409.1556.pdf)
 
@@ -677,7 +723,7 @@ Baseline feature extractor
 
 ![](../pic/微信截图_20190904184933.png)
 
-**Resnet**
+#### **Resnet**
 
 gated recurrent units
 
@@ -687,7 +733,7 @@ aim to avoid vanish gradient
 
 ![](../pic/微信截图_20190905103246.png)
 
-**GoogleNet (Inception)**
+#### **GoogleNet (Inception)**
 
 
 [Inception paper 1](https://arxiv.org/pdf/1409.4842.pdf)
@@ -696,23 +742,23 @@ aim to avoid vanish gradient
 
 no Pooling layer
 
-**Introduction**
+##### **Inception Introduction**
 
 The network used a CNN inspired by LeNet but implemented a novel element which is dubbed an inception module. It used batch normalization, image distortions and RMSprop. This module is based on several very small convolutions in order to drastically reduce the number of parameters. Their architecture consisted of a 22 layer deep CNN but reduced the number of parameters from 60 million (AlexNet) to 4 million.
 
-**Speciality**
+##### **Speciality**
 
 1. use several small filter to stand large filter --\&gt; n\*1 + 1\*n to replace n\*n
 
 2. for a single input layer, applied many different filters(some are pooling, some are 1\*1 with 1\*n with n\*1) and concatedate result (add together)
 
----\&gt; **to avoid representational bottlenecks and avoid stop locally**
+---> **to avoid representational bottlenecks and avoid stop locally**
 
 ![](../pic/微信截图_20190904131809.png)
 
 ![](../pic/微信截图_20190904135901.png)
 
-**MobileNet**
+#### **MobileNet**
 
 [MobileNwet Paper](https://arxiv.org/pdf/1704.04861.pdf)
 
@@ -731,17 +777,15 @@ convolution和pointwise convolution，整个网络有28层（这里Avg Pool和So
 ![](../pic/微信截图_20190905121221.png)
 
 
-**Comparation**
+#### **Comparation**
 
 ![](../pic/微信截图_20190905115837.png)
 
-**CNN in NLP**
+### **CNN in NLP**
 
 ![](../pic/微信截图_20190905124110.png)
 
-**Coding**
-
-**Keras**
+### **CNN Keras Coding**
 
 a basic model
 
@@ -791,6 +835,7 @@ model.add(Activation('softmax'))
  **Flatten layer**: Flatten serves as a connection between the convolution and dense layers.
 
 ## **RNN**
+[Back](#deep-learning)
 
 ### **RNN Introduction**
 
@@ -806,7 +851,7 @@ basic structure
 
 ![](../pic/002.png)
 
-**STATE**
+### **STATE**
 
 state machine: network is stated:
 
@@ -820,11 +865,11 @@ Keras code
 keras.layers.SimpleRNN(units, activation='tanh', use_bias=True, kernel_initializer='glorot_uniform', recurrent_initializer='orthogonal', bias_initializer='zeros', kernel_regularizer=None, recurrent_regularizer=None, bias_regularizer=None, activity_regularizer=None, kernel_constraint=None, recurrent_constraint=None, bias_constraint=None, dropout=0.0, recurrent_dropout=0.0, return_sequences=False, return_state=False, go_backwards=False, stateful=False, unroll=False)
 ```
 
-**Diagram of Neural Net**
+### **Diagram of Neural Net**
 
 ![](../pic/006.png)
 
-**Number of nodes and parameters in each layer (blue block on upper diagram)**
+#### **Number of nodes and parameters in each layer (blue block on upper diagram)**
 
 ![](../pic/007.png)
 
@@ -846,11 +891,11 @@ a sequence of label of length T
 
 [a good blog of RNN introduction](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
 
-**Vanish Gradient Problem**
+### **Vanish Gradient Problem**
 
 ![](../pic/008.png)
 
-**GATE**
+### **GATE**
 
 To solve this problem we need to add GATE which is attenuating and/or filtering in the state update equation (my understanding: amplify the influence of previous state)
 
@@ -862,7 +907,7 @@ All gate are trainable parameters and are learned using a single layer feedforwa
 
 tanh make the output in between -1 --> 1
 
-**LSTM**
+### **LSTM**
 
 ![](../pic/020.PNG)
 
@@ -872,37 +917,37 @@ tanh make the output in between -1 --> 1
 
 These operations are used to allow the LSTM to keep or forget information.
 
-**Core Concept**
+#### **Core Concept**
 
 The core concept of LSTM's are the cell state, and it's various gates. The cell state act as a transport highway that transfers relative information all the way down the sequence chain. You can think of it as the &quot;memory&quot; of the network. The cell state, in theory, can carry relevant information throughout the processing of the sequence. So even information from the earlier time steps can make it&#39;s way to later time steps, reducing the effects of short-term memory. As the cell state goes on its journey, information get&#39;s added or removed to the cell state via gates. The gates are different neural networks that decide which information is allowed on the cell state. The gates can learn what information is relevant to keep or forget during training.
 
 there are two state value(cell and hiden in each state)
 
-**Forget Gate**
+#### **Forget Gate**
 
 This gate decides what information should be thrown away or kept. Information from the previous hidden state and information from the current input is passed through the sigmoid function. Values come out between 0 and 1. The closer to 0 means to forget, and the closer to 1 means to keep.
 
 ![](../pic/forget.gif)
 
-**Input Gate**
+#### **Input Gate**
 
 First, we pass the previous hidden state and current input into a sigmoid function. That decides which values will be updated by transforming the values to be between 0 and 1. 0 means not important, and 1 means important. You also pass the hidden state and current input into the tanh function to squish values between -1 and 1 to help regulate the network. Then you multiply the tanh output with the sigmoid output. The sigmoid output will decide which information is important to keep from the tanh output.
 
 ![](../pic/input.gif)
 
-**Cell Gate**
+#### **Cell Gate**
 
 First, the cell state gets pointwise multiplied by the forget vector. This has a possibility of dropping values in the cell state if it gets multiplied by values near 0. Then we take the output from the input gate and do a pointwise addition which updates the cell state to new values that the neural network finds relevant. That gives us our new cell state.
 
 ![](../pic/cell.gif)
 
-**Output Gate**
+#### **Output Gate**
 
 The output gate decides what the next hidden state should be. Remember that the hidden state contains information on previous inputs. The hidden state is also used for predictions. First, we pass the previous hidden state and the current input into a sigmoid function. Then we pass the newly modified cell state to the tanh function. We multiply the tanh output with the sigmoid output to decide what information the hidden state should carry. The output is the hidden state. The new cell state and the new hidden is then carried over to the next time step.
 
 ![](../pic/output.gif)
 
-**OTHER VERSION(Keras)**
+#### **OTHER VERSION(Keras)**
 
 ![](../pic/013.PNG)
 
@@ -910,7 +955,7 @@ The output gate decides what the next hidden state should be. Remember that the 
 
 **My understanding:** In LSTM, each gate has a group of parameters, so four gates, four group of patameters, each group will generate an output, and they combine together to generate the final output and hiden state so the Keras version will use more parameters (4\*n\*(m+n+1))
 
-**other version of intorduction ()**
+#### **other version of LSTM intorduction**
 
 ![](../pic/015.PNG)
 
@@ -933,19 +978,19 @@ useful source:\
 
 [long short term memory lstm concept](https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359#:~:text=This%20allows%20information%20from%20previous,with%20in%20the%20LSTM%20cell.&amp;text=These%20gates%20determine%20which%20information,of%20%5B0%2C1%5D.)
 
-**GRU**
+### **GRU**
 
 ![](../pic/010.PNG)
 
 ![](../pic/021.PNG)
 
-**Update gate**
+#### **Update gate**
 
 (samilar to foget+input gate)
 
 ![](../pic/023.PNG)
 
-**Reset Gate**
+#### **Reset Gate**
 
 (samiar to )
 
@@ -953,18 +998,25 @@ useful source:\
 
 ![](../pic/022.PNG)
 
-**Back-Propagation through Time (BPTT)**
+### **Back-Propagation through Time (BPTT)**
 
-**Word Embedding**
+### **Word Embedding**
 
-**BERT**
+
+### **RNN Model**
+
+[Back](#deep-learning)
+
+#### **BERT**
 
 BERT (Bidirectional Encoder Representations from Transformers), released in late 2018, is a method to **pretrain language representations** that was used to create models that NLP practicioners can then download and use for free. You can either use these models to extract high quality language features from your text data, or you can fine-tune these models on a specific task (classification, entity recognition, question answering, etc.) with your own data to produce state of the art predictions.
 
-GPT-3
+### **GPT-3**
 
-# **TensorFlow and Keras**
+## **TensorFlow and Keras**
+[Back](#deep-learning)
 
-## **sequential model**
+### **sequential model**
 
-# **Pytorch**
+## **Pytorch**
+[Back](#deep-learning)
