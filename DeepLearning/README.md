@@ -163,37 +163,37 @@ Do
 
 ![](../pic/微信截图_20190830001140.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_b3f4bac3c68b4815.png)
+![](../pic/微信截图_20190830103400.png)
 
 ### **MAP**
 
-![](RackMultipart20200609-4-1vghqmz_html_18fe83c9f4be1a5e.png)
+![](../pic/微信截图_20190830114046.png)
 
 ### **ML**
 
-![](RackMultipart20200609-4-1vghqmz_html_29665d19846bf31c.png)
+![](../pic/微信截图_20190830113009.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_21b80969e3531f6.png)
+![](../pic/微信截图_20190830113025.png)
 
 ### **Entropy**
 
-![](RackMultipart20200609-4-1vghqmz_html_8da56602c46b5245.png)
+![](../pic/微信截图_20190830113152.png)
 
 ### **cross entropy**
 
-![](RackMultipart20200609-4-1vghqmz_html_bf5cb1284660f2.png)
+![](../pic/微信截图_20190830113923.png)
 
 ### **binary cross entropy**
 
-![](RackMultipart20200609-4-1vghqmz_html_77e47b852ac63f18.png)
+![](../pic/微信截图_20190830113338.png)
 
 ### **Regulatization**
 
 enforce penalty on weights to bias toward a prior distribution. --\&gt; to reduce over-fitting (by smaller weight)
 
-![](RackMultipart20200609-4-1vghqmz_html_db726c0bea78679c.png)
+![](../pic/微信截图_20190830130727.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_aa37b368896c0ba3.png)
+![](../pic/微信截图_20190830140205.png)
 
 ### **Train/Test Split**
 
@@ -219,7 +219,7 @@ iteration -- number of mini-batches per epoch
 6. Steps 1–5 are repeated until we are confident to say that our variables are well-defined.
 7. A predication is made by applying these variables to a new unseen input.
 
-![](RackMultipart20200609-4-1vghqmz_html_593d7265c38aaa0a.png)
+![](../pic/微信截图_20190830141431.png)
 
 ### **Forward Propagation**
 
@@ -227,51 +227,51 @@ iteration -- number of mini-batches per epoch
 
 ### **idea**
 
-![](RackMultipart20200609-4-1vghqmz_html_aab59b6a6559d55a.png)
+![](../pic/微信截图_20190830161035.png)
 
 To be specified, one step of forward neural net can be extracted as follow:
 
-![](RackMultipart20200609-4-1vghqmz_html_78be517db7bedf90.png)
+![](../pic/微信截图_20190830161202.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_7473f83e3c859d70.png)
+![](../pic/微信截图_20190830161629.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_31b2abbc3309ab7a.png)
+![](../pic/微信截图_20190830161750.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_3d160f94249cacc2.png)
+![](../pic/微信截图_20190830161826.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_6d471208f6d3a84e.png)
+![](../pic/微信截图_20190830161839.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_60124f597cfba9b9.png)
+![](../pic/微信截图_20190830161919.png)
 
 work for matrix (vector case)
 
-![](RackMultipart20200609-4-1vghqmz_html_ba7eb470ecdf0e55.png)
+![](../pic/微信截图_20190830162350.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_aa41cbdcadded46c.png)
+![](../pic/微信截图_20190830163035.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_af39175dcc414a86.png)
+![](../pic/微信截图_20190830164256.png)
 
 ### **summary**
 
-![](RackMultipart20200609-4-1vghqmz_html_6c880c0f2355fd49.png)
+![](../pic/微信截图_20190830164452.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_4ad67bab355f62fe.png)
+![](../pic/微信截图_20190830164502.png)
 
 ### **using batch**
 
 so it&#39;s like compute several data points with same **w** and **δ** and use average as the update delta
 
-![](RackMultipart20200609-4-1vghqmz_html_dd452a41409226cd.png)
+![](../pic/微信截图_20190830164622.png)
 
 ### **regularizer**
 
-![](RackMultipart20200609-4-1vghqmz_html_aa36bef44448933e.png)
+![](../pic/微信截图_20190830165306.png)
 
 ## **Multi-Layer Perceptron**
 
 ### **A Big Picture**
 
-![](RackMultipart20200609-4-1vghqmz_html_83036332887d36d4.png)
+![](../pic/微信截图_20190830171424.png)
 
 ### **Activation Function**
 
@@ -279,23 +279,23 @@ so it&#39;s like compute several data points with same **w** and **δ** and use 
 
 sigmoid &amp; tanh
 
-![](RackMultipart20200609-4-1vghqmz_html_a1bc06a8a3100d73.png)
+![](../pic/微信截图_20190830171638.png)
 
 problem: vanish
 
-![](RackMultipart20200609-4-1vghqmz_html_8d38e86f14f8b11f.png)
+![](../pic/微信截图_20190830171655.png)
 
 more important: **ReLU family -- will not vanish**
 
-![](RackMultipart20200609-4-1vghqmz_html_239029d623799778.png)
+![](../pic/微信截图_20190830171706.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_8dfcf8dbc61619a4.png)
+![](../pic/微信截图_20190830171724.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_c8532893f22ac0d0.png)
+![](../pic/微信截图_20190830171740.png)
 
 ### **Output Activation Function**
 
-![](RackMultipart20200609-4-1vghqmz_html_c6026c15e8df0c1d.png)
+![](../pic/微信截图_20190830173026.png)
 
 ### **Cost Function**
 
@@ -305,51 +305,51 @@ One Hot label vs. Softmax
 
 Quadratic Cost (MSE)
 
-![](RackMultipart20200609-4-1vghqmz_html_8b9921d4ba05dfe4.png)
+![](../pic/微信截图_20190830173847.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_3329add99a652ba8.png)
+![](../pic/微信截图_20190830174436.png)
 
 ### **Optimizer**
 
 **Hessian**
 
-![](RackMultipart20200609-4-1vghqmz_html_2539257a35f93b01.png)
+![](../pic/微信截图_20190830175146.png)
 
 **Condition**
 
-![](RackMultipart20200609-4-1vghqmz_html_3dad8c63de013b76.png)
+![](../pic/微信截图_20190830175317.png)
 
 will condition lead to fast gradient
 
 **Momentum**
 
-![](RackMultipart20200609-4-1vghqmz_html_28c66c29261f3813.png)
+![](../pic/微信截图_20190830175523.png)
 
 α (Momentum factor) normally i **ncrease** with the step goes
 
 η (Learning Rate) **decrease** with step goes
 
-![](RackMultipart20200609-4-1vghqmz_html_9d4401aae09a3f9c.png)
+![](../pic/微信截图_20190830175555.png)
 
 Nesterov Momentum
 
-![](RackMultipart20200609-4-1vghqmz_html_437504c3b211ba37.png)
+![](../pic/微信截图_20190830175921.png)
 
 ### **Differenct Kinds of Optimizers**
 
-![](RackMultipart20200609-4-1vghqmz_html_650754c9af76e2fe.png)
+![](../pic/微信截图_20190830180034.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_6ad5424d2129da4b.gif)
+![](../pic/contours_evaluation_optimizers.gif)
 
-![](RackMultipart20200609-4-1vghqmz_html_45113db764c52998.gif)
+![](../pic/saddle_point_evaluation_optimizers.gif)
 
 **RMSprop**
 
-![](RackMultipart20200609-4-1vghqmz_html_732d86baca3637d.png)
+![](../pic/微信截图_20190830210348.png)
 
 **Adam (more complex compared to RMSprop)**
 
-![](RackMultipart20200609-4-1vghqmz_html_598c8bb68c3b4cee.png)
+![](../pic/微信截图_20190830210511.png)
 
 **SGD**
 
@@ -358,20 +358,21 @@ Nesterov Momentum
 more basic, need more experience
 
 **AdaMax**
+![](../pic/微信截图_20190830211925.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_7de0c682f7e012eb.png)
+![](../pic/微信截图_20190830211935.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_f5271d421e21642d.png)
 
 **Adadelta (fastest)**
+![](../pic/微信截图_20190830211711.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_2774de887353b029.png)
+![](../pic/微信截图_20190830211725.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_9a700563d20a42cf.png)
+![](../pic/微信截图_20190830211744.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_c50119a3954193ec.png)
+![](../pic/微信截图_20190830211758.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_124503f3601a19a5.png)
+
 
 ### **which optimizer is best?**
 
@@ -383,19 +384,19 @@ bias- variance trade-off (in EE660) ( **for a given MSE** )
 
 ### **Dropout**
 
-![](RackMultipart20200609-4-1vghqmz_html_4ad76f17fae7c9ae.png)
+![](../pic/微信截图_20190830213026.png)
 
 Esemble method turn to drop out
 
-![](RackMultipart20200609-4-1vghqmz_html_890e09602d320852.png)
+![](../pic/微信截图_20190830222046.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_affe632fdb720ba5.png)
+![](../pic/微信截图_20190830222127.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_61dce90ac6bc48be.png)
+![](../pic/微信截图_20190830222223.png)
 
 ### **Normalization**
 
-![](RackMultipart20200609-4-1vghqmz_html_507bb6ce2744fcc9.png)
+![](../pic/微信截图_20190831112630.png)
 
 ### **Dimensionality Reduction**
 
@@ -403,59 +404,59 @@ SVD: singular value decomposition
 
 **PCA**
 
-![](RackMultipart20200609-4-1vghqmz_html_da7c6b4c2d4d5542.png)
+![](../pic/微信截图_20190831112734.png)
 
 **LDA**
 
 need labels of all data, change data based on it&#39;s label
 
-![](RackMultipart20200609-4-1vghqmz_html_b0e618b80cb6491a.png)
+![](../pic/微信截图_20190831112912.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_e099cf39bb8f671b.png)
+![](../pic/微信截图_20190831113005.png)
 
 ### **Hyper parameter**
 
-things Neural Network don&#39;t learning by themself
+things Neural Network don't learning by themself
 
-![](RackMultipart20200609-4-1vghqmz_html_8cc67dc43261959b.png)
+![](../pic/微信截图_20190901112326.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_a69602705eeb169c.png)
+![](../pic/微信截图_20190901112424.png)
 
 ### **use cross validation to set hyper-parameters**
 
 **Hyper-parameter seatch**
 
-![](RackMultipart20200609-4-1vghqmz_html_93f1eab87cb55241.png)
+![](../pic/微信截图_20190901112659.png)
 
 **Learning Rate Schedules**
 
-![](RackMultipart20200609-4-1vghqmz_html_c7fed6feedeecb9e.png)
+![](../pic/微信截图_20190901112836.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_5f7d00cc82230477.png)
+![](../pic/微信截图_20190901112938.png)
 
 **Universal Approximation Theorem**
 
 basic idea: Neural Network can simulate all function
 
-[http://neuralnetworksanddeeplearning.com/chap4.html](http://neuralnetworksanddeeplearning.com/chap4.html)
+[a visual proof that neural nets can compute any function](http://neuralnetworksanddeeplearning.com/chap4.html)
 
-![](RackMultipart20200609-4-1vghqmz_html_143ebaad46fc9f8d.png)
+![](../pic/微信截图_20190901113824.png)
 
 ## **CNN**
 
-![](RackMultipart20200609-4-1vghqmz_html_feb29546419238d.png)
+![](../pic/微信截图_20190901223801.png)
 
 ### **Introduction**
 
-good introduction: http://cs231n.github.io/convolutional-networks/#pool
+good introduction by [Stanford online class](http://cs231n.github.io/convolutional-networks/#pool)
 
 In summary:
 
 1. A ConvNet architecture is in the simplest case a list of Layers that transform the image volume into an output volume (e.g. holding the class scores)
 2. There are a few distinct types of Layers (e.g. CONV/FC/RELU/POOL are by far the most popular)
 3. Each Layer accepts an input 3D volume and transforms it to an output 3D volume through a differentiable function
-4. Each Layer may or may not have parameters (e.g. CONV/FC do, RELU/POOL don&#39;t)
-5. Each Layer may or may not have additional hyperparameters (e.g. CONV/FC/POOL do, RELU doesn&#39;t)
+4. Each Layer may or may not have parameters (e.g. CONV/FC do, RELU/POOL don't)
+5. Each Layer may or may not have additional hyperparameters (e.g. CONV/FC/POOL do, RELU doesn't)
 
 ### **Kernel(Filter)**
 
@@ -469,7 +470,7 @@ small (3\*3) deep
 
 large (5\*5) fast reduction,shallow, more parameters
 
-![](RackMultipart20200609-4-1vghqmz_html_24f59f1d4eaef514.png)
+![](../pic/微信截图_20190902125135.png)
 
 **Conv layer**
 
@@ -481,7 +482,7 @@ image: 3-D in volume
 
 also like Σ(wx)+b (if **b** exist?)
 
-![](RackMultipart20200609-4-1vghqmz_html_648ad421f704ce85.png)
+![](../pic/微信截图_20190902141443.png)
 
 use dot production to compute kernel\* cut part
 
@@ -495,7 +496,7 @@ number of filters we want to use, they will look into the same region
 
 **stride**
 
-commonly--\&gt; 1
+commonly --> 1
 
 **zero-padding**
 
@@ -509,17 +510,17 @@ we could:
 
 three filters to combine a kernel, three output add up together, and add bias
 
-![](RackMultipart20200609-4-1vghqmz_html_e217497c65e18125.gif)
+![](../pic/1_8dx6nxpUh2JqvYWPadTwMQ.gif)
 
-![](RackMultipart20200609-4-1vghqmz_html_a508f5e52ee8a979.gif)
+![](../pic/1_CYB2dyR3EhFs1xNLK8ewiA.gif)
 
-![](RackMultipart20200609-4-1vghqmz_html_b2178ef8e6216e8d.gif)
+![](../pic/1_RYYucIh3U-YFxrIkyQKzRw.gif)
 
 **dilation**
 
 it&#39;s possible to have filters that have spaces between each cell, called dilation.
 
-in one dimension a filter w of size 3 would compute over input x the following: w[0]\*x[0] + w[1]\*x[1] + w[2]\*x[2]. This is dilation of 0. For dilation 1 the filter would instead compute w[0]\*x[0] + w[1]\*x[2] + w[2]\*x[4]
+in one dimension a filter w of size 3 would compute over input x the following: `w[0]\*x[0] + w[1]\*x[1] + w[2]\*x[2]`. This is dilation of 0. For dilation 1 the filter would instead compute `w[0]\*x[0] + w[1]\*x[2] + w[2]\*x[4]`
 
 so the computed block is not continous
 
@@ -545,7 +546,7 @@ there are 96\*11\*11\*3+96 = 34944 parameters in totally
 
 questions? each filter has three channel or just one?
 
-![](RackMultipart20200609-4-1vghqmz_html_567940aba3dba61b.png)
+![](../pic/微信截图_20190904114655.png)
 
 ### **a new method: seperable convolution**
 
@@ -559,15 +560,15 @@ convert 3\*3 kernel to 3\*1 and 1\*3 (used in Enmedded system)
 
 Max pooling | average pooling | L2-norm pooling
 
-**Extents--\&gt;** # of points pooling together
+**Extents-->** # of points pooling together
 
-**Stride --\&gt;** # of step to move in next pooling
+**Stride -->** # of step to move in next pooling
 
-![](RackMultipart20200609-4-1vghqmz_html_a999a2849fffa4f8.png)
+![](../pic/微信截图_20190902141555.png)
 
 **De-Conv(Transpose convolution) layer**
 
-convolution: a pixels block into a point --\&gt; down sampling
+convolution: a pixels block into a point --> down sampling
 
 de-convolution: a point to a block --\&gt; up sampling, from a low resolution to a higher one
 
@@ -575,15 +576,15 @@ use one point in the previous layer to generate 3\*3 blocks with the help of fil
 
 For an example in the image below, we apply transposed convolution with a 3 x 3 kernel over a 2 x 2 input padded with a 2 x 2 border of zeros using unit strides. The up-sampled output is with size 4 x 4.
 
-![](RackMultipart20200609-4-1vghqmz_html_c8702ee2ff8858a7.gif)
+![](../pic/1_KGrCz7aav02KoGuO6znO0w.gif)
 
-![](RackMultipart20200609-4-1vghqmz_html_f6de5a5883f45b69.png)
+![](../pic/微信截图_20190904144909.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_1726de1daff24533.png)
+![](../pic/微信截图_20190904144918.png)
 
 map e.g. 4-dimensional space to 25-dimensional space
 
-![](RackMultipart20200609-4-1vghqmz_html_64359bb6036e5d8a.gif)
+![](../pic/main-qimg-f0c8518784fdef4130a781181eae1a11.gif)
 
 Transposed 2D convolution with no padding, stride of 2 and kernel of 3
 
@@ -599,7 +600,7 @@ model is more efficient
 
 Grouped convolution may provide a better model than a nominal 2D convolution.
 
-![](RackMultipart20200609-4-1vghqmz_html_ae1a55d5cbd012.png)
+![](../pic/微信截图_20190904183355.png)
 
 **this is a bit similar like seperable convolutions**
 
@@ -609,11 +610,11 @@ If the number of filter groups is the same as the input layer channel, each filt
 
 Efficiency!
 
-in **MobileNet:** [https://arxiv.org/pdf/1704.04861.pdf](https://arxiv.org/pdf/1704.04861.pdf)
+in [**MobileNet:**](https://arxiv.org/pdf/1704.04861.pdf)
 
 change the 3\*3 kernel to 3\*1 and 1\*3 two kernel This would require 6 instead of 9 parameters while doing the same operations.
 
-![](RackMultipart20200609-4-1vghqmz_html_a76793b400f386ec.png)
+![](../pic/微信截图_20190904152855.png)
 
 Although spatially separable convolutions save cost, it is rarely used in deep learning. One of the main reason is that not all kernels can be divided into two, smaller kernels. If we replace all traditional convolutions by the spatially separable convolution, we limit ourselves for searching all possible kernels during training. The training results may be sub-optimal.
 
@@ -627,9 +628,9 @@ As the second step of depthwise separable convolution, to extend the depth, we a
 
 Thus, after applying 128 1x1 convolutions, we can have a layer with size 5 x 5 x 128.
 
-![](RackMultipart20200609-4-1vghqmz_html_ae2d5c768811c729.png)
+![](../pic/微信截图_20190904153609.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_4b89cc5a2755a4df.png)
+![](../pic/微信截图_20190904153751.png)
 
 **drwaback:**
 
@@ -655,7 +656,7 @@ reduces the number of parameters in the convolution. As such, for a small model,
 
 classifies digits in 32x32 pixel greyscale inputimages
 
-![](RackMultipart20200609-4-1vghqmz_html_97045388cc290811.png)
+![](../pic/微信截图_20190904135146.png)
 
 **AlexNet(2012)**
 
@@ -663,17 +664,17 @@ classifies digits in 32x32 pixel greyscale inputimages
 
 train on two GPUs
 
-![](RackMultipart20200609-4-1vghqmz_html_5b8964470d08b957.png)
+![](../pic/微信截图_20190904135357.png)
 
 **VGG**
 
-[https://arxiv.org/pdf/1409.1556.pdf](https://arxiv.org/pdf/1409.1556.pdf)
+[VGG paper here](https://arxiv.org/pdf/1409.1556.pdf)
 
 Baseline feature extractor
 
 16 (weighted) layers CNN 138M parameters
 
-![](RackMultipart20200609-4-1vghqmz_html_a126afd34ff33e86.png)
+![](../pic/微信截图_20190904184933.png)
 
 **Resnet**
 
@@ -683,13 +684,14 @@ take a standard feed-forward ConvNet and add **skip connections** that bypass (o
 
 aim to avoid vanish gradient
 
-![](RackMultipart20200609-4-1vghqmz_html_3e7de549ae5e4c13.png)
+![](../pic/微信截图_20190905103246.png)
 
 **GoogleNet (Inception)**
 
-[https://arxiv.org/pdf/1512.00567.pdf](https://arxiv.org/pdf/1512.00567.pdf)
 
-[https://arxiv.org/pdf/1409.4842.pdf](https://arxiv.org/pdf/1409.4842.pdf)
+[Inception paper 1](https://arxiv.org/pdf/1409.4842.pdf)
+
+[Inception paper 2](https://arxiv.org/pdf/1512.00567.pdf)
 
 no Pooling layer
 
@@ -705,37 +707,36 @@ The network used a CNN inspired by LeNet but implemented a novel element which i
 
 ---\&gt; **to avoid representational bottlenecks and avoid stop locally**
 
-![](RackMultipart20200609-4-1vghqmz_html_5ed94d0df129e768.png)
+![](../pic/微信截图_20190904131809.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_ebb904f0bfe347c1.png)
+![](../pic/微信截图_20190904135901.png)
 
 **MobileNet**
 
-[https://arxiv.org/pdf/1704.04861.pdf](https://arxiv.org/pdf/1704.04861.pdf)
+[MobileNwet Paper](https://arxiv.org/pdf/1704.04861.pdf)
 
 Deepwise Seperable Convolution + Pointwise Convolution (1\*1)
 
-![](RackMultipart20200609-4-1vghqmz_html_3dd88c0ba55bdaaa.png)
+![](../pic/微信截图_20190905120814.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_1d21cff1e02fdb64.png)
+![](../pic/微信截图_20190905120751.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_2033bf0a7a90fd37.png)
+![](../pic/微信截图_20190905121034.png)
 
 MobileNet的网络结构如表1所示。首先是一个3x3的标准卷积，然后后面就是堆积depthwise separable convolution，并且可以看到其中的部分depthwise convolution会通过strides=2进行down sampling。然后采用average pooling将feature变成1x1，根据预测类别大小加上全连接层，最后是一个softmax层。如果单独计算depthwise
 
 convolution和pointwise convolution，整个网络有28层（这里Avg Pool和Softmax不计算在内）。我们还可以分析整个网络的参数和计算量分布，如表2所示。可以看到整个计算量基本集中在1x1卷积上，如果你熟悉卷积底层实现的话，你应该知道卷积一般通过一种im2col方式实现，其需要内存重组，但是当卷积核为1x1时，其实就不需要这种操作了，底层可以有更快的实现。对于参数也主要集中在1x1卷积，除此之外还有就是全连接层占了一部分参数。
 
-![](RackMultipart20200609-4-1vghqmz_html_2033bf0a7a90fd37.png)
+![](../pic/微信截图_20190905121221.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_eb2256fb47a49c09.png)
 
 **Comparation**
 
-![](RackMultipart20200609-4-1vghqmz_html_73a6a5077dffbe16.png)
+![](../pic/微信截图_20190905115837.png)
 
 **CNN in NLP**
 
-![](RackMultipart20200609-4-1vghqmz_html_649ca37756cc28eb.png)
+![](../pic/微信截图_20190905124110.png)
 
 **Coding**
 
@@ -743,9 +744,50 @@ convolution和pointwise convolution，整个网络有28层（这里Avg Pool和So
 
 a basic model
 
-from keras.models import Sequential from keras.layers import Dense, Conv2D, Flatten#create model model = Sequential()#add model layers model.add(Conv2D(64, kernel\_size=3, activation=&#39;relu&#39;, input\_shape=(28,28,1))) model.add(Conv2D(32, kernel\_size=3, activation=&#39;relu&#39;)) model.add(Flatten()) model.add(Dense(10, activation=&#39;softmax&#39;)) # Compiling the model takes three parameters: optimizer, loss and metrics. model.compile(optimizer=&#39;adam&#39;, loss=&#39;categorical\_crossentropy&#39;, metrics=[&#39;accuracy&#39;]) #train the model model.fit(X\_train, y\_train, validation\_data=(X\_test, y\_test), epochs=3) #predict first 4 images in the test set model.predict(X\_test[:4]) model = Sequential() model.add(Conv2D(32, (3, 3), padding=&#39;same&#39;, input\_shape=x\_train.shape[1:])) model.add(Activation(&#39;relu&#39;)) model.add(Conv2D(32, (3, 3))) model.add(Activation(&#39;relu&#39;)) model.add(MaxPooling2D(pool\_size=(2, 2))) model.add(Dropout(0.25)) model.add(Conv2D(64, (3, 3), padding=&#39;same&#39;)) model.add(Activation(&#39;relu&#39;)) model.add(Conv2D(64, (3, 3))) model.add(Activation(&#39;relu&#39;)) model.add(MaxPooling2D(pool\_size=(2, 2))) model.add(Dropout(0.25)) model.add(Flatten()) model.add(Dense(512)) model.add(Activation(&#39;relu&#39;)) model.add(Dropout(0.5)) model.add(Dense(num\_classes)) model.add(Activation(&#39;softmax&#39;))
+``` py
+from keras.models import Sequential 
+from keras.layers import Dense, Conv2D, Flatten
 
- &#39; **Flatten&#39; layer.** Flatten serves as a connection between the convolution and dense layers.
+#create model 
+model = Sequential()
+
+#add model layers 
+model.add(Conv2D(64, kernel_size=3, activation='relu', input_shape=(28,28,1))) 
+model.add(Conv2D(32, kernel_size=3, activation='relu')) 
+model.add(Flatten()) 
+model.add(Dense(10, activation='softmax'))
+
+# Compiling the model takes three parameters: optimizer, loss and metrics. 
+model.compile(optimizer='adam', loss='categorical_crossentropy&', metrics=['accuracy']) 
+
+#train the model 
+model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=3) 
+#predict first 4 images in the test set 
+model.predict(X_test[:4]) 
+
+## another example of CNN
+model = Sequential() 
+model.add(Conv2D(32, (3, 3), padding='same',input_shape=x_train.shape[1:])) 
+model.add(Activation('relu')) 
+model.add(Conv2D(32, (3, 3))) 
+model.add(Activation('relu')) 
+model.add(MaxPooling2D(pool_size=(2, 2))) 
+model.add(Dropout(0.25)) 
+model.add(Conv2D(64, (3, 3), padding='same'))
+model.add(Activation('relu')) 
+model.add(Conv2D(64, (3, 3))) 
+model.add(Activation('relu')) 
+model.add(MaxPooling2D(pool_size=(2, 2))) 
+model.add(Dropout(0.25)) 
+model.add(Flatten()) 
+model.add(Dense(512)) 
+model.add(Activation('relu')) 
+model.add(Dropout(0.5)) 
+model.add(Dense(num_classes)) 
+model.add(Activation('softmax'))
+```
+
+ **Flatten layer**: Flatten serves as a connection between the convolution and dense layers.
 
 # **RNN**
 
@@ -753,35 +795,37 @@ from keras.models import Sequential from keras.layers import Dense, Conv2D, Flat
 
 _x\_1, x\_2, x\_3, …, x\_t_ represent the input words from the text, _y\_1, y\_2, y\_3, …, y\_t_ represent the predicted next words and _h\_0, h\_1, h\_2, h\_3, …, h\_t_ hold the information for the previous input words.
 
-![](RackMultipart20200609-4-1vghqmz_html_b1c5a722421e871a.png)
+![](../pic/003.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_de0f04d469445c85.png)
+![](../pic/004.png)
 
-![](RackMultipart20200609-4-1vghqmz_html_4701d6f28649be72.png)
+![](../pic/001.png)
 
 basic structure
 
-![](RackMultipart20200609-4-1vghqmz_html_7685f3043467f378.png)
+![](../pic/002.png)
 
 **STATE**
 
 state machine: network is stated:
 
-![](RackMultipart20200609-4-1vghqmz_html_41e6214aadc53add.png)
+![](../pic/005.png)
 
 (Vanilla RNN)
 
 Keras code
 
-keras.layers.SimpleRNN(units, activation=&#39;tanh&#39;, use\_bias=True, kernel\_initializer=&#39;glorot\_uniform&#39;, recurrent\_initializer=&#39;orthogonal&#39;, bias\_initializer=&#39;zeros&#39;, kernel\_regularizer=None, recurrent\_regularizer=None, bias\_regularizer=None, activity\_regularizer=None, kernel\_constraint=None, recurrent\_constraint=None, bias\_constraint=None, dropout=0.0, recurrent\_dropout=0.0, return\_sequences=False, return\_state=False, go\_backwards=False, stateful=False, unroll=False)
+```py
+keras.layers.SimpleRNN(units, activation='tanh', use_bias=True, kernel_initializer='glorot_uniform', recurrent_initializer='orthogonal', bias_initializer='zeros', kernel_regularizer=None, recurrent_regularizer=None, bias_regularizer=None, activity_regularizer=None, kernel_constraint=None, recurrent_constraint=None, bias_constraint=None, dropout=0.0, recurrent_dropout=0.0, return_sequences=False, return_state=False, go_backwards=False, stateful=False, unroll=False)
+```
 
 **Diagram of Neural Net**
 
-![](RackMultipart20200609-4-1vghqmz_html_ee1faaf3b424bcf8.png)
+![](../pic/006.png)
 
 **Number of nodes and parameters in each layer (blue block on upper diagram)**
 
-![](RackMultipart20200609-4-1vghqmz_html_d483efe064cf699a.png)
+![](../pic/007.png)
 
 Node on layer: n
 
@@ -799,37 +843,37 @@ a sequence of input of length T
 
 a sequence of label of length T
 
-[http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
+[a good blog of RNN introduction](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)
 
 **Vanish Gradient Problem**
 
-![](RackMultipart20200609-4-1vghqmz_html_79c2415e24329448.png)
+![](../pic/008.png)
 
 **GATE**
 
 To solve this problem we need to add GATE which is attenuating and/or filtering in the state update equation (my understanding: amplify the influence of previous state)
 
-![](RackMultipart20200609-4-1vghqmz_html_a889ea58591140fb.png)
+![](../pic/009.png)
 
 All gate are trainable parameters and are learned using a single layer feedforward network (my understanding: GATE make simple m\*n parameters network more complex, though if we block the process, it is still a m input and n output problem, the inner parametes(weight) are no longer n(m+n+1), it because more complex, but still based on **V(n\*n), W(m\*n), b (n)**
 
-![](RackMultipart20200609-4-1vghqmz_html_c48cb2de28927154.gif)
+![](../pic/1_WMnFSJHzOloFlJHU6fVN-g.gif)
 
-tanh make the output in between -1 -\&gt; 1
+tanh make the output in between -1 --> 1
 
 **LSTM**
 
-![](RackMultipart20200609-4-1vghqmz_html_6fdeda312ac89911.png)
+![](../pic/020.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_78205c093de637c0.png)
+![](../pic/011.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_e67933a5de123164.png)
+![](../pic/012.PNG)
 
 These operations are used to allow the LSTM to keep or forget information.
 
 **Core Concept**
 
-The core concept of LSTM&#39;s are the cell state, and it&#39;s various gates. The cell state act as a transport highway that transfers relative information all the way down the sequence chain. You can think of it as the &quot;memory&quot; of the network. The cell state, in theory, can carry relevant information throughout the processing of the sequence. So even information from the earlier time steps can make it&#39;s way to later time steps, reducing the effects of short-term memory. As the cell state goes on its journey, information get&#39;s added or removed to the cell state via gates. The gates are different neural networks that decide which information is allowed on the cell state. The gates can learn what information is relevant to keep or forget during training.
+The core concept of LSTM's are the cell state, and it's various gates. The cell state act as a transport highway that transfers relative information all the way down the sequence chain. You can think of it as the &quot;memory&quot; of the network. The cell state, in theory, can carry relevant information throughout the processing of the sequence. So even information from the earlier time steps can make it&#39;s way to later time steps, reducing the effects of short-term memory. As the cell state goes on its journey, information get&#39;s added or removed to the cell state via gates. The gates are different neural networks that decide which information is allowed on the cell state. The gates can learn what information is relevant to keep or forget during training.
 
 there are two state value(cell and hiden in each state)
 
@@ -837,61 +881,60 @@ there are two state value(cell and hiden in each state)
 
 This gate decides what information should be thrown away or kept. Information from the previous hidden state and information from the current input is passed through the sigmoid function. Values come out between 0 and 1. The closer to 0 means to forget, and the closer to 1 means to keep.
 
-![](RackMultipart20200609-4-1vghqmz_html_8688019d24f82e96.gif)
+![](../pic/forget.gif)
 
 **Input Gate**
 
 First, we pass the previous hidden state and current input into a sigmoid function. That decides which values will be updated by transforming the values to be between 0 and 1. 0 means not important, and 1 means important. You also pass the hidden state and current input into the tanh function to squish values between -1 and 1 to help regulate the network. Then you multiply the tanh output with the sigmoid output. The sigmoid output will decide which information is important to keep from the tanh output.
 
-![](RackMultipart20200609-4-1vghqmz_html_b8df976ec465ee61.gif)
+![](../pic/input.gif)
 
 **Cell Gate**
 
 First, the cell state gets pointwise multiplied by the forget vector. This has a possibility of dropping values in the cell state if it gets multiplied by values near 0. Then we take the output from the input gate and do a pointwise addition which updates the cell state to new values that the neural network finds relevant. That gives us our new cell state.
 
-![](RackMultipart20200609-4-1vghqmz_html_729638f3288789f5.gif)
+![](../pic/cell.gif)
 
 **Output Gate**
 
 The output gate decides what the next hidden state should be. Remember that the hidden state contains information on previous inputs. The hidden state is also used for predictions. First, we pass the previous hidden state and the current input into a sigmoid function. Then we pass the newly modified cell state to the tanh function. We multiply the tanh output with the sigmoid output to decide what information the hidden state should carry. The output is the hidden state. The new cell state and the new hidden is then carried over to the next time step.
 
-![](RackMultipart20200609-4-1vghqmz_html_806fd902524628.gif)
+![](../pic/output.gif)
 
 **OTHER VERSION(Keras)**
 
-![](RackMultipart20200609-4-1vghqmz_html_30c2ecd3137c3bf9.png)
+![](../pic/013.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_7b72b43248ff4d5f.png)
+![](../pic/014.PNG)
 
 **My understanding:** In LSTM, each gate has a group of parameters, so four gates, four group of patameters, each group will generate an output, and they combine together to generate the final output and hiden state so the Keras version will use more parameters (4\*n\*(m+n+1))
 
 **other version of intorduction ()**
 
-![](RackMultipart20200609-4-1vghqmz_html_5e6749d9445f804.png)
+![](../pic/015.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_b39d32350a5d48c8.png)
+![](../pic/016.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_df4c70e64d3b9000.png)
+![](../pic/018.PNGg)
 
-![](RackMultipart20200609-4-1vghqmz_html_ae09f6d76df0bcb3.png)
+![](../pic/017.PNG)
 
-![](RackMultipart20200609-4-1vghqmz_html_ab4f6352738c94a4.png)
+![](../pic/019.PNG)
 
 LSTM code:
 
-usful source: [Illustrated Guide to LSTM&#39;s and GRU&#39;s: A step by step explanation]
+useful source:\
+[Illustrated Guide to LSTM‘s and GRU’s: A step by step explanation](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
 
-https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21
+[illustrated guide to recurrent neural networks](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)
 
-[https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9](https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9)
+[Understanding LSTMs](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 
-[http://colah.github.io/posts/2015-08-Understanding-LSTMs/](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-
-[https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359#:~:text=This%20allows%20information%20from%20previous,with%20in%20the%20LSTM%20cell.&amp;text=These%20gates%20determine%20which%20information,of%20%5B0%2C1%5D.](https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359#:~:text=This%20allows%20information%20from%20previous,with%20in%20the%20LSTM%20cell.&amp;text=These%20gates%20determine%20which%20information,of%20%5B0%2C1%5D.)
+[long short term memory lstm concept](https://medium.com/@kangeugine/long-short-term-memory-lstm-concept-cb3283934359#:~:text=This%20allows%20information%20from%20previous,with%20in%20the%20LSTM%20cell.&amp;text=These%20gates%20determine%20which%20information,of%20%5B0%2C1%5D.)
 
 **GRU**
 
-![](RackMultipart20200609-4-1vghqmz_html_6ea62f4da7bff9c9.png)
+![](../pic/010.PNG)
 
 ![](RackMultipart20200609-4-1vghqmz_html_bb73d8d504e5ad26.png)
 
