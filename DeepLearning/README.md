@@ -1,4 +1,8 @@
 # **Deep Learning**
+
+This note is based on course I took from USC in 2019 spring,  [EE599 Deep Learning](https://web-app.usc.edu/soc/syllabus/20191/31097.pdf) taught by Prof. Keith Michael Chugg and [Brandon Franzke](https://viterbi.usc.edu/directory/faculty/Franzke/Brandon-Sterling).\
+Thanks!
+
 1. [Basic concept Introduction](#basic-concept-introduction)
 
    1. [Gradient Descent](#gradient-descent)
