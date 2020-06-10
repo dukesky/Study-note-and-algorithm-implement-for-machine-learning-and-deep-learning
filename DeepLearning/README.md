@@ -1018,7 +1018,7 @@ we sum up the gradients at each time step for one training example:
 
 $$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}  $$
 
-$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}  $
+$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}$
 
 code implement
 ```py
