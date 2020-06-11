@@ -845,21 +845,21 @@ model.add(Activation('softmax'))
 
 _x\_1, x\_2, x\_3, …, x\_t_ represent the input words from the text, _y\_1, y\_2, y\_3, …, y\_t_ represent the predicted next words and _h\_0, h\_1, h\_2, h\_3, …, h\_t_ hold the information for the previous input words.
 
-![](../pic/003.png)
+![](../pic/003.PNG)
 
-![](../pic/004.png)
+![](../pic/004.PNG)
 
-![](../pic/001.png)
+![](../pic/001.PNG)
 
 basic structure
 
-![](../pic/002.png)
+![](../pic/002.PNG)
 
 ### **STATE**
 
 state machine: network is stated:
 
-![](../pic/005.png)
+![](../pic/005.PNG)
 
 (Vanilla RNN)
 
@@ -871,11 +871,11 @@ keras.layers.SimpleRNN(units, activation='tanh', use_bias=True, kernel_initializ
 
 ### **Diagram of Neural Net**
 
-![](../pic/006.png)
+![](../pic/006.PNG)
 
 #### **Number of nodes and parameters in each layer (blue block on upper diagram)**
 
-![](../pic/007.png)
+![](../pic/007.PNG)
 
 Node on layer: n
 
@@ -897,13 +897,13 @@ a sequence of label of length T
 
 ### **Vanish Gradient Problem**
 
-![](../pic/008.png)
+![](../pic/008.PNG)
 
 ### **GATE**
 
 To solve this problem we need to add GATE which is attenuating and/or filtering in the state update equation (my understanding: amplify the influence of previous state)
 
-![](../pic/009.png)
+![](../pic/009.PNG)
 
 All gate are trainable parameters and are learned using a single layer feedforward network (my understanding: GATE make simple m\*n parameters network more complex, though if we block the process, it is still a m input and n output problem, the inner parametes(weight) are no longer n(m+n+1), it because more complex, but still based on **V(n\*n), W(m\*n), b (n)**
 
@@ -1016,12 +1016,31 @@ Here, y_t is the correct word at time step t, and \hat{y}_t is our prediction. W
 
 we sum up the gradients at each time step for one training example:
 
-$$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}  $$
+<!-- $$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}  $$
 
-$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}$
+$\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}$ -->
+
+![](../pic/001.svg)
+
+![](../pic/026.PNG)
+
+Use E3 as an example, 
+
+![](../pic/027.PNG)
+
+![](../pic/028.PNG)
+
+![](../pic/030.PNG)
+
+We sum up the contributions of each time step to the gradient. In other words, because W is used in every step up to the output we care about, we need to backpropagate gradients from t=3 through the network all the way to t=0:
+
+![](../pic/031.PNG)
+
+Compared with standard Back Propagation, BPTT **The key difference is that we sum up the gradients for W at each time step. In a traditional NN we don’t share parameters across layers, so we don’t need to sum anything.**
 
 code implement
 ```py
+def bptt(self,x,y):   
     T = len(y)
     # Perform forward propagation
     o, s = self.forward_propagation(x)
