@@ -148,7 +148,7 @@ Thanks!
 
       2. [Reset Gate](#reset-gate)
 
-   5. [Back-Propagation through Time (BPTT)](#Back-Propagation-through-Time-(BPTT))
+   5. [Back-Propagation through Time (BPTT)](#Back-Propagation-through-Time-BPTT)
 
    6. [Word Embedding](#word-embedding)
 
@@ -1022,19 +1022,19 @@ $\frac{\alpha E}{\alpha W} = \sum _{t} \frac{\alpha E_t}{\alpha W}$ -->
 
 ![](../pic/001.svg)
 
-![](../pic/026.PNG)
+![](../pic/026.png)
 
 Use E3 as an example, 
 
-![](../pic/027.PNG)
+![](../pic/027.png)
 
-![](../pic/028.PNG)
+![](../pic/028.png)
 
-![](../pic/030.PNG)
+![](../pic/030.png)
 
 We sum up the contributions of each time step to the gradient. In other words, because W is used in every step up to the output we care about, we need to backpropagate gradients from t=3 through the network all the way to t=0:
 
-![](../pic/031.PNG)
+![](../pic/031.png)
 
 Compared with standard Back Propagation, BPTT **The key difference is that we sum up the gradients for W at each time step. In a traditional NN we don’t share parameters across layers, so we don’t need to sum anything.**
 
