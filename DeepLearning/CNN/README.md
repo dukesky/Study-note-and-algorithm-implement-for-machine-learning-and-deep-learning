@@ -410,6 +410,7 @@ import sklearn
 import skimage
 import tensorflow.keras.datasets as datasets
 from sklearn.utils import shuffle
+from sklearn.metrics import accuracy_score
 
 (x_train, y_train), (x_test, y_test)=datasets.mnist.load_data(path="mnist.npz")
 
@@ -417,13 +418,17 @@ model= cnn(input_size=(1,28,28),kernel_size=3,n_filters=10,output_size=10)
 model.train(x_train.reshape(-1,1,28,28) , np.array(y_train), beta1 = 0.95, beta2 = 0.99, batch_size = 32, num_epochs = 2, save_path = False)
 
 
-y_predict = model.predict(x_test[:100].reshape(-1,1,28,28))
-print('test data prediction accuracy is %f %%'%())
+y_predict = model.predict(x_test.reshape(-1,1,28,28))
+print('test data prediction accuracy is %f %%'%(accuracy_score(y_test, y_test_predict)*100))
+```
+```
+test data prediction accuracy is 85.280000 %
+
 ```
 
 
 ## Conclusion
-
+In this post, I implemented the full CNN model using numpy to solve an image classification problem.
 
 ----------
 full code written by Jupyter notebook is [here](https://github.com/dukesky/Study-note-and-algorithm-implement-for-machine-learning-and-deep-learning/tree/master/DeepLearning/CNN)
